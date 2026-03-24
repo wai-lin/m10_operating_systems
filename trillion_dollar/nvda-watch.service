@@ -1,0 +1,14 @@
+[Unit]
+Description=NVDA price watcher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/nvda-watch
+ExecStart=/opt/nvda-watch/nvda-watch
+Restart=on-failure
+EnvironmentFile=/etc/nvda-watch.env
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,23 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go build artifacts
+*.test
+*.out
+
+# Go workspace
+/go.work
+/go.work.sum
+
+# VS Code
+.vscode/
+
+# Local env files
+.env
+
+# Runtime data
+nvda.db
